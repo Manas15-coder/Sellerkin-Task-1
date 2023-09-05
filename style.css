@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 94%);
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: 4s ease-in;
+}
+
+.navbar {
+    color: #fff;
+    font-weight: bold;
+    padding: 20px 40px;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #fff;
+}
+
+/* Hero Section */
+#hero {
+    padding: 20px 40px;
+    justify-content: center;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+    align-items: center;
+    animation: appear 4s ease forwards;
+    font-weight: 900;
+
+}
+
+.hero-content h1.display-1 {
+    margin-top: 10%;
+    font-size: 50px;
+}
+
+.hero-content h2 {
+    font-size: 50px;
+}
+
+.hero .scroll-down {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    background: transparent;
+}
+
+.banner-img {
+    animation: float 2s ease-in-out forwards infinite;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.hero-content {
+    animation: fadeIn 2s ease;
+
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.hero h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.hero button {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.logo {
+    height: 50px;
+}
+
+#video-section {
+    height: 60vh;
+    padding: 40px 40px;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.video {
+    height: 300px;
+    width: 500px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+}
+
+.video-section h2 {
+    margin-top: 20%;
+    color: black;
+    font-weight: bold;
+}
+
+
+.features {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.features h2 {
+    color: #7d12f4;
+    margin-bottom: 10px;
+}
+
+.features .feature {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 6s ease-in-out forwards;
+
+}
+
+.feature:hover {
+    transform: translateY(10px);
+    border: 2px solid #7d12f4;
+}
+
+.features .feature i {
+    font-size: 3rem;
+    color: #7d12f4;
+
+}
+
+.features h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.features p {
+    font-size: 18px;
+    color: #666;
+}
+
+@media (max-width: 767px) {
+    .features .feature {
+        padding: 10px;
+    }
+
+    .features .feature i {
+        font-size: 2rem;
+    }
+
+    .features h3 {
+        font-size: 20px;
+    }
+
+    .features p {
+        font-size: 16px;
+    }
+}
+
+#unlock-success {
+    background-color: #7d12f4;
+    ;
+}
+
+.unlock-success {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.unlock-success p.lead {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.unlock-success h3.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.unlock-success p {
+    font-size: 18px;
+    color: #ccc;
+}
+
+.unlock-success h3 {
+    padding: 10px 20px;
+    border: 2px dashed #fff;
+
+}
+
+.founder-desk {
+    padding: 80px 0;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b7/Purple_Circle.png');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    text-align: center;
+}
+
+.founder-desk img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 20%;
+}
+
+.founder-message {
+    text-align: left;
+    padding: 20px;
+}
+
+.founder-message h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.founder-message p {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 15px;
+    line-height: 1.5;
+
+}
+
+.founder {
+    border: 4px solid #4D2DB7;
+    height: 200px;
+}
+
+.founder-span {
+    color: #7d12f4;
+}
+
+.glass {
+
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass:hover {
+    border: 3px solid #7d12f4;
+}
+
+.winning-formula {
+    height: 70vh;
+    padding: 40px 40px;
+    background-color: #7d12f4;
+    color: #fff;
+}
+
+.winning-formula p {
+    border: 2px dashed #fff;
+    padding: 10px 20px;
+    margin: 4px;
+}
+
+.winning-formula h2 {
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+#newsletter {
+    height: 60vh;
+    padding-top: 40px;
+    padding: 40px 40px;
+    background-color: #fff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    margin-top: 10%;
+    padding: 40px 40px;
+    background-color: #7d12f4;
+    border-radius: 20px;
+}
+
+.input {
+    width: 400px;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.newsletter-btn {
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    color: #7d12f4;
+    border-radius: 20px;
+}
+
+.newsletter-btn:hover {
+    background-color: #7d12f4;
+    color: #fff;
+}
+
+
+.footer {
+    width: 100%;
+    background-color: #7d12f4;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-icons a {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff5722;
+    /* Hover color */
+}
+
+/* Copyright Text Styles */
+.copyright {
+    font-size: 14px;
+    text-align: right;
+}
+
+
+/* Floating button */
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff5722;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.floating-button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Add media queries for responsive design */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes appear {
+    to {
+        opacity: 1;
+
+    }
+}
